@@ -1,0 +1,22 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "tsc-watch --onSuccess \"node ./dist/index.js\"",
+        "build": "tsc -p .",
+        "start": "node ./dist/index"
+    },
+    "devDependencies": {
+        "@types/node": "^22.5.1",
+        "prisma": "^5.19.0",
+        "tsc-watch": "^6.2.0",
+        "typescript": "^5.5.4"
+    },
+    "dependencies": {
+        "@prisma/client": "^5.19.0",
+        "ioredis": "^5.4.1",
+        "kafkajs": "^2.2.4",
+        "socket.io": "^4.7.5"
+    }
+}
